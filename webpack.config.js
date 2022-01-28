@@ -18,6 +18,11 @@ module.exports = () => {
     //   globalObject: 'this',
     //   chunkLoadingGlobal: `webpackJsonp_sspahtmlwithjs`,
     // },
+    performance: {
+      hints: false,
+      maxEntrypointSize: 512000,
+      maxAssetSize: 512000,
+    },
     resolve: {
       extensions: ['.jsx', '.js'],
     },
