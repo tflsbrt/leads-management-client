@@ -8,20 +8,15 @@ module.exports = () => {
   const isDevelopment = process.env.NODE_ENV !== 'production';
 
   return {
-    mode: /*isDevelopment ? */ 'development' /*": 'production'*/,
+    mode: isDevelopment ? 'development' : 'production',
     devtool: isDevelopment ? 'eval-source-map' : 'source-map',
     entry: path.resolve(__dirname, 'src', 'index.js'),
-    // output: {
-    //   path: path.resolve('./build'),
-    //   filename: '[name].[contenthash].js',
-    //   publicPath: '/',
-    //   globalObject: 'this',
-    //   chunkLoadingGlobal: `webpackJsonp_sspahtmlwithjs`,
-    // },
-    performance: {
-      hints: false,
-      maxEntrypointSize: 512000,
-      maxAssetSize: 512000,
+    output: {
+      path: path.resolve('./build'),
+      //   filename: '[name].[contenthash].js',
+      //   publicPath: '/',
+      //   globalObject: 'this',
+      //   chunkLoadingGlobal: `webpackJsonp_sspahtmlwithjs`,
     },
     resolve: {
       extensions: ['.jsx', '.js'],
