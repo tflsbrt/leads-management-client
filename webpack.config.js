@@ -14,7 +14,7 @@ module.exports = () => {
     output: {
       path: path.resolve('./build'),
       // filename: '[name].[contenthash].js',
-      publicPath: isDevelopment ? 'http://172.24.15.136:5003/' : '/',
+      publicPath: isDevelopment ? 'http://172.24.15.136:5003/' : 'https://leads-management-client.vercel.app/',
       // chunkFilename: '[name].chunk.js',
       // globalObject: 'this',
       // chunkLoadingGlobal: `webpackJsonp_sspahtmlwithjs`,
