@@ -8,7 +8,7 @@ module.exports = () => {
   const isDevelopment = process.env.NODE_ENV !== 'production';
 
   return {
-    mode: isDevelopment ? 'development' : 'production',
+    mode: /*isDevelopment ? */ 'development' /*": 'production'*/,
     devtool: isDevelopment ? 'eval-source-map' : 'source-map',
     entry: path.resolve(__dirname, 'src', 'index.js'),
     // output: {
