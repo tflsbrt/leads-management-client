@@ -13,8 +13,8 @@ module.exports = () => {
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
       path: path.resolve('./build'),
-      //   filename: '[name].[contenthash].js',
-      //   publicPath: '/',
+      filename: '[name].[contenthash].js',
+      publicPath: '/',
       //   globalObject: 'this',
       //   chunkLoadingGlobal: `webpackJsonp_sspahtmlwithjs`,
     },
