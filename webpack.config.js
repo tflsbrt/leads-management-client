@@ -12,7 +12,7 @@ module.exports = () => {
     devtool: isDevelopment ? 'eval-source-map' : 'source-map',
     entry: path.resolve(__dirname, 'src', 'index.js'),
     output: {
-      // path: path.resolve('./build'),
+      path: path.resolve('./build'),
       // filename: '[name].[contenthash].js',
       publicPath: isDevelopment ? 'http://172.24.15.136:5003/' : '/',
       // chunkFilename: '[name].chunk.js',
