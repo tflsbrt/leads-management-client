@@ -11,13 +11,13 @@ module.exports = () => {
     mode: isDevelopment ? 'development' : 'production',
     devtool: isDevelopment ? 'eval-source-map' : 'source-map',
     entry: path.resolve(__dirname, 'src', 'index.js'),
-    output: {
-      path: path.resolve('./build'),
-      filename: '[name].[contenthash].js',
-      publicPath: '/',
-      globalObject: 'this',
-      chunkLoadingGlobal: `webpackJsonp_sspahtmlwithjs`,
-    },
+    // output: {
+    //   path: path.resolve('./build'),
+    //   filename: '[name].[contenthash].js',
+    //   publicPath: '/',
+    //   globalObject: 'this',
+    //   chunkLoadingGlobal: `webpackJsonp_sspahtmlwithjs`,
+    // },
     resolve: {
       extensions: ['.jsx', '.js'],
     },
@@ -25,7 +25,7 @@ module.exports = () => {
       static: path.resolve(__dirname, 'public'),
       hot: true,
       host: '0.0.0.0',
-      port: 5002,
+      port: 5003,
       headers: {
         'Access-Control-Allow-Origin': '*',
       },

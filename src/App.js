@@ -17,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <div className="main-page">
+    <div className="mf2-main-page">
       <h1>Microfrontend 2</h1>
       <Button variant="warning" onClick={handleShow}>
         Open Modal
